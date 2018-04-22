@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/locchecker"
+    tools:context="com.keliya.chickson.finder.LoccheckActivity">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:background="@drawable/button_sign_in"
+        android:fontFamily="monospace"
+        android:text="ALLOW ACCESS"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="42dp"
+        tools:layout_editor_absoluteY="463dp"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="463dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="54dp"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="42dp"
+        app:layout_constraintEnd_toEndOf="parent" />
+</android.support.constraint.ConstraintLayout>
