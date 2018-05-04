@@ -122,7 +122,7 @@ class MainActivity : AppCompatActivity() {
         if(password.length>6){
             editTextPassword.error = null
         }else{
-            editTextPassword.error = "Password should be greater than 6 characters "
+            editTextPassword.error = "Password should be greater than 6 characters."
         }
         return valid
     }
