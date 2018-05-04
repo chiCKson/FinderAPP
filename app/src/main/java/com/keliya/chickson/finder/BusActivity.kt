@@ -48,7 +48,7 @@ class BusActivity : AppCompatActivity() {
             }
             override fun onCancelled(error: DatabaseError) {
                 // Failed to read value
-                Toast.makeText(this@BusActivity, "not read", Toast.LENGTH_LONG).show()
+                Toast.makeText(this@BusActivity, "Error in Reading Database.", Toast.LENGTH_LONG).show()
             }
         })
     }
