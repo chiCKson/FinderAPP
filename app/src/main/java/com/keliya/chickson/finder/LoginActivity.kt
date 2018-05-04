@@ -99,7 +99,7 @@ class LoginActivity : AppCompatActivity() {
         if(android.util.Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             editTextEmailLogin.error = null
         }else{
-            editTextEmailLogin.error = "Enter a valid email."
+            editTextEmailLogin.error = "Please enter a valid email address."
         }
         return valid
     }
