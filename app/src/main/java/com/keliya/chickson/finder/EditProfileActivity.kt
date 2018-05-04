@@ -56,7 +56,7 @@ class EditProfileActivity : AppCompatActivity() {
     fun writeProfile(userId:String,name:String,mobileNo:String){
         var user:User=User(name,mobileNo)
         myRef!!.child("userProfiles").child(userId).setValue(user)
-        Toast.makeText(this@EditProfileActivity, "Profile Updated", Toast.LENGTH_LONG).show()
+        Toast.makeText(this@EditProfileActivity, "Profile Updated.", Toast.LENGTH_LONG).show()
     }
 
     fun md5(toEncrypt: String): String {
@@ -103,7 +103,7 @@ class EditProfileActivity : AppCompatActivity() {
         }).addOnSuccessListener( { taskSnapshot ->
             // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
             progressBarEDitprofile.visibility=View.INVISIBLE
-            Toast.makeText(this,"upload success", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"upload success.", Toast.LENGTH_SHORT).show()
             val downloadUrl = taskSnapshot.downloadUrl
         })
     }
