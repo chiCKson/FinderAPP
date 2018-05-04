@@ -115,7 +115,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback , GoogleApiClient.Co
        // mDatabase!!.child("users").child(userId).setValue(latLng)
         val markerOptions = MarkerOptions()
         markerOptions.position(latLng)
-        markerOptions.title("Current Position")
+        markerOptions.title("Current Location")
         markerOptions.draggable(true)
         markerOptions.icon(BitmapDescriptorFactory.fromResource(R.drawable.map_marker))
         mCurrLocationMarker = mGoogleMap!!.addMarker(markerOptions)
