@@ -99,7 +99,7 @@ class EditProfileActivity : AppCompatActivity() {
         // Register observers to listen for when the download is done or if it fails
         uploadTask.addOnFailureListener( {
             // Handle unsuccessful uploads
-            Toast.makeText(this,"upload not success please select another image", Toast.LENGTH_SHORT).show()
+            Toast.makeText(this,"Upload not successed.Please select different image.", Toast.LENGTH_SHORT).show()
         }).addOnSuccessListener( { taskSnapshot ->
             // taskSnapshot.getMetadata() contains file metadata such as size, content-type, and download URL.
             progressBarEDitprofile.visibility=View.INVISIBLE
