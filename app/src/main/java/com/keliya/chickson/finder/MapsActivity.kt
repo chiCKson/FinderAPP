@@ -162,8 +162,8 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback , GoogleApiClient.Co
                 // this thread waiting for the user's response! After the user
                 // sees the explanation, try again to request the permission.
                 AlertDialog.Builder(this)
-                        .setTitle("Location Permission Needed")
-                        .setMessage("This app needs the Location permission, please accept to use location functionality")
+                        .setTitle("Location Permission Needed.")
+                        .setMessage("This app needs the Location permission, please accept to use location functionality.")
                         .setPositiveButton("OK", DialogInterface.OnClickListener { dialogInterface, i ->
                             //Prompt the user once explanation has been shown
                             ActivityCompat.requestPermissions(this@MapsActivity,
@@ -200,7 +200,7 @@ class MapsActivity : FragmentActivity(), OnMapReadyCallback , GoogleApiClient.Co
                 } else {
                     // permission denied, boo! Disable the
                     // functionality that depends on this permission.
-                    Toast.makeText(this, "permission denied", Toast.LENGTH_LONG).show()
+                    Toast.makeText(this, "Permission denied.", Toast.LENGTH_LONG).show()
                 }
                 return
             }
