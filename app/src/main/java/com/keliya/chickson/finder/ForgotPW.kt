@@ -35,7 +35,7 @@ class ForgotPW : AppCompatActivity() {
                 .addOnCompleteListener(this) { task ->
                     //checking if success
                     if (task.isSuccessful) {
-                        Toast.makeText(this@ForgotPW, "Reset Email send to email address you provided.", Toast.LENGTH_LONG).show()
+                        Toast.makeText(this@ForgotPW, "Reset link send to email address you provided.", Toast.LENGTH_LONG).show()
                        val intent=LoginActivity.newIntent(this)
                         progressBar4.visibility=View.INVISIBLE
                         startActivity(intent)
