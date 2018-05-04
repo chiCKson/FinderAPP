@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
                     } else {
                         //Log.e(FragmentActivity.TAG, "sendEmailVerification", task.exception)
                         Toast.makeText(this@MainActivity,
-                                "Failed to send verification email.",
+                                "Failed to send verification email. Please try again.",
                                 Toast.LENGTH_SHORT).show()
                     }
                 }
